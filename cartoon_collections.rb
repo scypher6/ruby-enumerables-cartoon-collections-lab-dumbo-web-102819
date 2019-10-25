@@ -40,5 +40,5 @@ def find_the_cheese (array)
   
   criteria = array.include?(cheese_types[0]) || array.include?(cheese_types[1]) || array.include?(cheese_types[2])
   
-  if array.find {criteria}
+  if array.find {}
 end
