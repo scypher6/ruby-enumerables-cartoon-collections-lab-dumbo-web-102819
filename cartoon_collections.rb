@@ -1,6 +1,11 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves (dwarves) # code an argument here
+  #dwarves = ["Doc", "Grumpy", "Happy", "Sleepy", "Dopey", "Bashful", "Sneezy"]
+  array = dwarves.sort
+  array.size.times do |n|
+    puts "#{n+1}.*#{array[n]}"
+  end
 end
+  
 
 def summon_captain_planet# code an argument here
   # Your code here
