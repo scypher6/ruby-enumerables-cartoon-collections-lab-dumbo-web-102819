@@ -34,9 +34,20 @@ def long_planeteer_calls (array)   #code an argument here
     false
 end
 
+
 def find_the_cheese (array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+  a = cheese_types[0]
+  b = cheese_types[1]
+  c = cheese_types[2]
+  found = 0
+  criteria_met = array.include?(a) || array.include?(b) || array.include?(c)
 
+  if criteria_met
+      found = array.find {|word| word==a || word==b || word==c}
+      return found
+  end
+  
+  nil
 end
